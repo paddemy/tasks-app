@@ -18,7 +18,8 @@
     "lint:check:oxlint": "oxlint .",
     "lint:check:eslint": "eslint .",
     "format": "prettier --write --experimental-cli src/",
-    "prepare:android": "npm run build && npx cap sync android && npx cap open android"
+    "prepare:android": "npm run build && npx cap sync android && npx cap open android",
+    "prepare:ios": "npm run build && npx cap add ios && npx cap open ios"
   },
   "dependencies": {
     "@capacitor/android": "^7.6.5",
